@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Project Name: Activity 2
+Version: 1.1
+Module: Activity 2 v1.1
+Programmer Name: Tim James
+Date: March 4, 2019
+Synopsis: Working through the activities step by step.
+  -->
+  
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body>
+
+	<form method="POST">
+	User Name:<br>
+	<input type="text" name="username"><br><br>
+	Password:<br>
+	<input type="text" name="password"><br><br>
+	<input type="submit" formaction="loginHandler.php" value="Login" name="Submit"><br><br>
+	</form>
+	
+	<button onclick="goBack()">Go Back</button>
+	<script>
+	function goBack() {
+  	window.history.back();
+	}
+	</script>
+
+</body>
+</html>

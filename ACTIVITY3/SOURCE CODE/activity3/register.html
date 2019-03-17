@@ -1,0 +1,38 @@
+<!--
+Project Name: Activity 2
+Version: 1.1
+Module: Activity 2 v1.1
+Programmer Name: Tim James
+Date: March 4, 2019
+Synopsis: Working through the activities step by step.
+  -->
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+</head>
+<body>
+
+	<form method="POST">
+	First Name:<br>
+	<input type="text" name="FirstName"><br><br>
+	Last Name:<br>
+	<input type="text" name="LastName"><br><br>
+	Username:<br>
+	<input type="text" name="Username"><br><br>
+	Password:<br>
+	<input type="text" name="Password"><br><br>
+	<input type="submit" formaction="registerHandler.php" name="Submit"><br><br>
+	<input type="submit" formaction="getAllUsers.php" value="GET SQL DATA" name="Get">
+	</form>
+	
+	<button onclick="goBack()">Go Back</button>
+	<script>
+	function goBack() {
+  	window.history.back();
+	}
+	</script>
+	
+</body>
+</html>
